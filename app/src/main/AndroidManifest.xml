@@ -3,10 +3,11 @@
     package="com.teamninjas.prototype_aicet4">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -22,24 +23,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Custom_theme">
+        <activity android:name=".Activities.SinupActivity" />
+        >
+        <activity android:name=".Activities.MasterAcitivty" />
 
-        <activity android:name=".Activities.SinupActivity" /> >
-
-        <activity android:name=".Activities.MasterAcitivty" ></activity>
-
-            <!--<intent-filter>
+        <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            </activity>-->
+            </activity>
+        -->
 
         <activity android:name=".Activities.AdditionalInfo" />
-
-
-
         <activity android:name=".Activities.MainLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -62,8 +62,8 @@
         -->
 
         <activity android:name=".Activities.CollgeStudent" />
-
-
+        <activity android:name=".Activities.CollegeInfo"></activity>
+        <activity android:name=".Activities.NewPost"></activity>
     </application>
 
 </manifest>

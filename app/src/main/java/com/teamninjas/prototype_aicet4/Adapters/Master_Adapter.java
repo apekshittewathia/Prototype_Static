@@ -28,9 +28,9 @@ public class Master_Adapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
 
-        if(position == 0) {
-            return new MainFeedRecyclerView();
-        }
+          if(position == 0) {
+        return new MainFeedRecyclerView();
+         }
 
         else if(position == 1)
         return new Notification();

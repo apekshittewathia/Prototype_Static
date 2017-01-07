@@ -1,0 +1,37 @@
+package com.teamninjas.prototype_aicet4.Adapters;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+
+import com.teamninjas.prototype_aicet4.FeedRecyclerView.MainFeedRecyclerView;
+import com.teamninjas.prototype_aicet4.Fragments.Notification;
+
+/**
+ * Created by apekshit on 8/1/17.
+ */
+
+
+    public class Page_Adapter extends FragmentPagerAdapter {
+
+
+
+
+        public Page_Adapter(FragmentManager fm) {
+            super(fm);
+        }
+
+
+        @Override
+        public Fragment getItem(int position) {
+        return new MainFeedRecyclerView();
+        }
+
+
+    @Override
+    public int getCount() {
+        return 1;
+    }
+}
+
+
